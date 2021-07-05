@@ -67,7 +67,6 @@ export default function Trending(props) {
             <div className={classes.form}>
                 <form className={classes.form}>
                     <TextField className={classes.input} label="Encontre seu filme" value={keyword} variant="filled" onChange={inputChangeHandler}/>
-
                     <Button variant="contained" color="primary" onClick={handleSubmit}>
                         Pesquisar
                     </Button>
