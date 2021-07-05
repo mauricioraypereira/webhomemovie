@@ -3,9 +3,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import Logo from '../images/logo.jpg'
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,6 +27,10 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         display: 'flex',
         justifyContent: 'space-evenly'
+    },
+    logo: {
+        borderRadius: '50%',
+        width: '50px'
     }
 }));
 
@@ -39,6 +42,9 @@ export default function Routes() {
             <div>
                 <AppBar position="static">
                     <Toolbar className={classes.toolbar}>
+                        <Link className={classes.links} to="/">
+                            <img className={classes.logo} src={Logo}/>
+                        </Link>
                         <Typography variant="h6">
                             <Link className={classes.links} to="/">Home</Link>
                         </Typography>
