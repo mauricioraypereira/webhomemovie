@@ -73,7 +73,6 @@ export default function Trending(props) {
                     </Button>
                 </form>
             </div>
-
             {
                 !!moviesList && moviesList.results.length > 0 ?
                 (
